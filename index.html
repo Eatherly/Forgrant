@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ForgrantTT</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="libs/normolize.css">
+        <link rel="stylesheet" href="libs/bootstrap.min.css">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <div class="container"> 
+            <div class="row">
+                <div class="col-md-6">
+
+                    <a href="admin.html">Admin</a>
+                    <div class="uniform"></div>
+                    <div class="inform">
+                        <button type="button" class="btn btn-success" id="cost">10000</button>
+                    </div>
+                    <form>
+                        <p> 
+                            <input type="button" class="btn btn-primary" value="Choose Date" id="subDate"><br>
+                            <input type="date" id="selectDate"></p>
+                    </form>
+
+                </div>
+                <div class="col-md-6">
+                    <ul> 
+                        <li> Представим ситуацию, у нас есть платформа торговли (товары, продукты, цифровой контент), и требуется реализовать удобный интерфейс управления ценами и скидками на каждый продукт:
+                            <ul>
+                                <li>Продукт «Школьная форма»<ul>
+                                        <li>Цена по умолчанию 10000 руб.</li> 
+                                        <li>В период с 01.05.2016 по 01.01.2017 установить цену 12000.</li>
+                                        <li>В период с 01.07.2016 по 10.09.2016 года установить цену 15000.</li>
+                                        <li>В период с 1.06.2017 по 20.10.2017 года установить цену 20000.</li>
+                                        <li>В период с 15.12.2017 по 31.12.2017 установить цену 5000.</li></ul></li>
+                                <li>Реализовать простой и удобный интерфейс управления изменением цены у продукта.
+                                <li>Реализовать архитектуру базы данных (таблицы, столбцы, типы, связи, ключи)</li>
+                                <li>Поскольку, возможны пересечения и наложения интервалов, реализовать 2 способа определения цены на любой день:
+                                    <ul><li>Приоритетнее цена с меньшим периодом действия (цена на 1 месяц приоритетнее цены установленной на 1 год)
+                                        <li>Приоритетнее цена, установленная позднее (используя сортировку)</ul>
+
+                                <li>Реализовать вывод графиков по обоим типам.</li></li></ul> 
+                    Разработанный проект выложить в публичный доступ на github/bitbucket/…
+                    </li>
+                    </ul> 
+
+
+                </div>
+            </div>
+        </div> 
+        <script src="libs/jquery-3.2.1.min.js"></script>
+        <script src="js/default.js"></script>
+        <script src="js/js.js"></script>
+    </body>
+
+</html>

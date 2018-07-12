@@ -1,0 +1,10 @@
+.uniform {
+    width: 300px;
+    height: 620px;
+    background-image: url(../img/angusnavy.jpg);
+    background-size: cover;
+    float: left;
+}
+#selectDate , #subDate , #cost {
+    margin-top: 10px;
+}

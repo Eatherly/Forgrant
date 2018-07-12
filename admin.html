@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>adminPanel</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="libs/normolize.css">
+        <link rel="stylesheet" href="libs/bootstrap.min.css">
+        <link rel="stylesheet" href="style/style.css">
+        <style>
+            #timeperiod {
+                width: 178px;
+            }
+            .form-control{
+                text-align: center;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <a href="index.html">Index</a>   
+            <h1>School uniform price</h1>   
+
+            <form class="form-inline">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon" id="timeperiod">Default price</div>
+                        <input type="number" class="form-control" id="price0"  placeholder="">
+                        <div class="input-group-addon">$</div>
+                    </div>
+                </div>
+
+            </form>
+
+            <form class="form-inline">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon" id="timeperiod">From 01.01.2016 </div>
+                        <input type="number" class="form-control" id="price1" placeholder="">
+                        <div class="input-group-addon">$</div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="form-inline">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon timePeriod">01.05.2016 - 01.01.2017 </div>
+                        <input type="number" class="form-control" id="price2"  placeholder="">
+                        <div class="input-group-addon">$</div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="form-inline">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon timePeriod">01.07.2016 - 10.09.2016  </div>
+                        <input type="number" class="form-control" id="price3"  placeholder="">
+                        <div class="input-group-addon">$</div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="form-inline">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon timePeriod"> 01.06.2017 - 20.10.2017  </div>
+                        <input type="number" class="form-control" id="price4"  placeholder="">
+                        <div class="input-group-addon">$</div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="form-inline">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon timePeriod">15.12.2017 - 31.12.2017 </div>
+                        <input type="number" class="form-control" id="price5"  placeholder="">
+                        <div class="input-group-addon">$</div>
+                    </div>
+                </div>
+
+            </form>
+            <form action="setPriority.php" method="post" target="_sel">     
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="by_less" value="by_less" checked>
+                        Set priority by less period
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="by_last" value="by_last" >
+                        Set priority by last period
+                    </label>
+                    <br>
+                    <button type="submit" class="btn btn-primary setPrice">Save Changes</button>
+            </form>
+        </div>
+
+
+    </div>  
+    <script src="libs/jquery-3.2.1.min.js"></script>
+
+    <script src=js/download.js></script>
+
+    <script src="js/saveChanges.js">
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
