@@ -1,9 +1,6 @@
 <?php
 
-$connection = mysqli_connect('localhost', 'root', '', 'forgrant');
-mysqli_set_charset($connection, 'utf8');
-if (mysqli_connect_errno())
-    echo mysqli_connect_error();
+include_once "connection.php";
 $a = strtotime($_POST[setPrice]);
 $query = "(SELECT * FROM `goods` WHERE $a BETWEEN UNIX_TIMESTAMP(`start_price`)"
         . " AND UNIX_TIMESTAMP(`end_price`) ORDER BY `start_price` DESC);";
